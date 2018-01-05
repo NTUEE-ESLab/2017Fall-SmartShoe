@@ -1,0 +1,55 @@
+
+#include <BLE.h>
+#include <string.h>
+#define fsr_pin A3
+/* Pin number variables for LEDs on MSP432P401R LaunchPad */
+
+/* +1 for null-terminator */
+int numBytes = 0;
+char serialData[BLE_SERIAL_BUFFER_SIZE + 1];
+
+
+void setup() {
+  Serial.begin(115200);
+  ble.setLogLevel(BLE_LOG_ERRORS);
+  // Initalize I/O
+  ble.begin();
+  ble.serial();
+  ble.setAdvertName("Energia Serial");
+  ble.startAdvert();
+}
+
+void parseSerialString(String dataString)
+{
+  // Check if we found Adafruit app msg start char
+  Serial.print("Do nothing:");
+  Serial.println(dataString);
+}
+
+void loop() {
+  // Address: A0:E6:F8:BA:20:04
+  
+  Serial.println("Start!");
+  ble.handleEvents();
+  /* Forward Energia serial monitor to BLE serial. */
+  int fsr_value = analogRead(fsr_pin);
+  Serial.print("Sensor Value:");
+  Serial.println(fsr_value);
+  //delay(10);
+
+  char a = (fsr_value%10)+48;
+  char b = ((fsr_value/10)%10)+48;
+  char c = ((fsr_value/100)%10)+48;
+  char d = ((fsr_value/1000)%10)+48;
+  serialData[0] = d;
+  serialData[1] = c;
+  serialData[2] = b;
+  serialData[3] = a;
+
+  numBytes = 4;
+  Serial.readBytes(serialData, numBytes);
+  serialData[numBytes] = '\0';
+  Serial.print("Sending via serial:");
+  Serial.println(serialData);
+  ble.print(serialData);
+}
