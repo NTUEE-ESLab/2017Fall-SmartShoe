@@ -1,13 +1,18 @@
 # SmartShoe
+
 Get good grades with SmartShoe!!!
 
 # What is SmartShoe?
+
 SmartShoe is a project aimed at providing an easy way of communicating without being noticed. The idea is to implement a sender and various receivers that can be hidden in our clothing (i.e. shoes). The sender and receivers may transmit valuable information without suspicious action.
 
 # How is it made?
+
 The prototype consists of two kinds of shoes: SmartShoe-sender and SmartShoe-receiver. SmartShoe-sender utilized MSP432 LaunchPad as its brain, with the LaunchPad's BLE add-on and a force sensor for sender to input data. SmartShoe-receiver is implemented using raspberry pi 3, with a vibrating sensor to transmit the received data to the user.
 
-(Paste Graph)
+Inline-style: 
+![alt text]( 2017Fall-SmartShoe/Images/sender_bb.jpg  "SmartShoe-sender")
+![alt text]( 2017Fall-SmartShoe/Images/receiver_bb.jpg  "SmartShoe-receiver")
 
 # Usages
 
