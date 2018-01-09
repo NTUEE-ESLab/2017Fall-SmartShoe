@@ -1,8 +1,57 @@
 # SmartShoe
 Get good grades with SmartShoe!!!
 
-This Project utilizes MSP432 microcontroller and Raspberry Pi 3 to create a communicating system
+# What is SmartShoe?
+SmartShoe is a project aimed at providing an easy way of communicating without being noticed. The idea is to implement a sender and various receivers that can be hidden in our clothing (i.e. shoes). The sender and receivers may transmit valuable information without suspicious action.
 
-# Header 1
-## Header 2
-### Header 3
+# How is it made?
+The prototype consists of two kinds of shoes: SmartShoe-sender and SmartShoe-receiver. SmartShoe-sender utilized MSP432 LaunchPad as its brain, with the LaunchPad's BLE add-on and a force sensor for sender to input data. SmartShoe-receiver is implemented using raspberry pi 3, with a vibrating sensor to transmit the received data to the user.
+
+(Paste Graph)
+
+# Usages
+
+## SmartShoe-sender
+
+To use SmartShoe-sender, the sender must send data through pressing the force sensor. SmartShoe-sender provides four different alphabets to send by default(A,B,C,D). Each alphabet would correspond to a specific pattern of pressing the force sensor. Instead of having the user to learn data encoding protocols, SmartShoe lets the sender to customize how each input should be like. 
+
+To use SmartShoe-sender to costumize your input pattern and send data, please follow the steps below:
+	1. Power on SmartShoe-sender. Once the shoe is powered, it automatically enters initialization mode. Any configuration you made will be lost when the shoe loses power.
+	2. In the initializtion mode, press push-button2. A green LED will light up, when this happens, press the force sensor with the pattern you wish to represent the alphabet 'A'. SmartShoe stores up to 3 seconds of pressing pattern, if your pressing pattern exceeds three seconds, the pattern of the middle three seconds would be selected as the specific pattern. It is advised that your pressing pattern is within three seconds.
+	3. Wait for the green LED to go off. SmartShoe-sender has now initialized what kind of pressing pattern represents 'A'. 
+	4. Repeat step 2 and step 3 three more times to specify the patterns for 'B', 'C', and 
+D'.
+	5. Now all patterns have been specified, all the subsequent presses you made will be decoded using the data your have input in the initialization mode and sent to SmartShoe-receiver.
+
+SmartShoe-sender uses vector manipulation to determine what your input should be, to minimize error:
+	1. Be sure your input pressing pattern matches the pattern in initialization mode, especially in frequency.
+	2. Make sure to wait at least one second between each pressing pattern.(It is recommended to wain up to three seconds if time permits.)
+
+##SmartShoe-receiver
+
+To use SmartShoe-receiver, perform the following steps:
+	1. Make sure a SmartShoe-sender is working nearby.
+	2. Power on your SmartShoe-receiver.
+	3. The vibration motor is configured to vibrate each alphabet to you with the following pattern(each on/off takes 0.3 second):
+
+		|Alphabets   |'A'         |'B'         |'C'         |'D'         |
+		|:----------:|:----------:|:----------:|:----------:|:----------:|
+		|Pattern     |on	  |on/off/on   |on/off/on/off/on|on/off/on/off/on/off|
+
+
+#I want my own SmartShoe
+
+The following information will give you enough knowledge about how to build your own SmartShoe prototype.
+
+##Building your own SmartShoe-sender:
+
+Hardware requirements:
+	MSP432P401R LaunchPad
+	CC2650 Module BoosterPack
+	Force Sensor x 1
+	5.6k ohm resistor(5%) x1
+
+To configure the software environment to build SmartShoe-sender source code, you need to first install Energia. After installation, have 'Energia MSP432 boards' installed(Tools -> Boards -> Boards Manager). Make sure to install 'Energia MSP432 boards' and don't install 'Energia MSP432 EMT RED boards'. Once the board is correctly installed, go to 'Sketch -> Include Library -> Library Manager' and install BLE.
+
+Finally, you need to build and configure CMSIS-DSP library on Energia, please refer to """"" for help.
+
