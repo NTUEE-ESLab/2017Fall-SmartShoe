@@ -19,26 +19,35 @@ The prototype consists of two kinds of shoes: SmartShoe-sender and SmartShoe-rec
 
 To use SmartShoe-sender, the sender must send data through pressing the force sensor. SmartShoe-sender provides four different alphabets to send by default(A,B,C,D). Each alphabet would correspond to a specific pattern of pressing the force sensor. Instead of having the user to learn data encoding protocols, SmartShoe lets the sender to customize how each input should be like. 
 
-To use SmartShoe-sender to costumize your input pattern and send data, please follow the steps below:
+To use SmartShoe-sender to costumize your input pattern and send data, please follow the steps below
 
 	1. Power on SmartShoe-sender. Once the shoe is powered, it automatically enters initialization mode. Any configuration you made will be lost when the shoe loses power.
+	
 	2. In the initializtion mode, press push-button2. A green LED will light up, when this happens, press the force sensor with the pattern you wish to represent the alphabet 'A'. SmartShoe stores up to 3 seconds of pressing pattern, if your pressing pattern exceeds three seconds, the pattern of the middle three seconds would be selected as the specific pattern. It is advised that your pressing pattern is within three seconds.
+	
 	3. Wait for the green LED to go off. SmartShoe-sender has now initialized what kind of pressing pattern represents 'A'. 
+	
 	4. Repeat step 2 and step 3 three more times to specify the patterns for 'B', 'C', and 'D'.
+	
 	5. Now all patterns have been specified, all the subsequent presses you made will be decoded using the data your have input in the initialization mode and sent to SmartShoe-receiver.
 
-SmartShoe-sender uses vector manipulation to determine what your input should be, to minimize error:
+SmartShoe-sender uses vector manipulation to determine what your input should be, to minimize error
 
 	1. Be sure your input pressing pattern matches the pattern in initialization mode, especially in frequency.
+	
 	2. Make sure to wait at least one second between each pressing pattern.(It is recommended to wain up to three seconds if time permits.)
 
 ## SmartShoe-receiver
 
-To use SmartShoe-receiver, perform the following steps:
+To use SmartShoe-receiver, perform the following steps
 
 	1. Make sure a SmartShoe-sender is working nearby.
+	
 	2. Power on your SmartShoe-receiver.
-	3. The vibration motor is configured to vibrate each alphabet to you with the following pattern(each on/off takes 0.3 second):
+	
+	3. The vibration motor is configured to vibrate each alphabet to you with the following pattern(each on/off takes 0.3 second)
+	
+### Vibration Pattern:
 
 		|Alphabets   |'A'         |'B'         |'C'         |'D'         |
 		|:----------:|:----------:|:----------:|:----------:|:----------:|
