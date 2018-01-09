@@ -27,7 +27,7 @@ SmartShoe-sender uses vector manipulation to determine what your input should be
 	1. Be sure your input pressing pattern matches the pattern in initialization mode, especially in frequency.
 	2. Make sure to wait at least one second between each pressing pattern.(It is recommended to wain up to three seconds if time permits.)
 
-##SmartShoe-receiver
+## SmartShoe-receiver
 
 To use SmartShoe-receiver, perform the following steps:
 	1. Make sure a SmartShoe-sender is working nearby.
@@ -36,14 +36,14 @@ To use SmartShoe-receiver, perform the following steps:
 
 		|Alphabets   |'A'         |'B'         |'C'         |'D'         |
 		|:----------:|:----------:|:----------:|:----------:|:----------:|
-		|Pattern     |on	  |on/off/on   |on/off/on/off/on|on/off/on/off/on/off|
+		|Pattern     |on/off	  |on/off x2   |on/off x3   |on/off x4   |
 
 
-#I want my own SmartShoe
+# I want my own SmartShoe
 
 The following information will give you enough knowledge about how to build your own SmartShoe prototype.
 
-##Building your own SmartShoe-sender:
+## Building your own SmartShoe-sender:
 
 Hardware requirements:
 	MSP432P401R LaunchPad
