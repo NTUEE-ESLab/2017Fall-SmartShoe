@@ -127,7 +127,7 @@ void Init(int num){
           }
       }else{
           int start = (end_point - ans_len)/2;     
-          for (int i = 0; i < end_point; i++){
+          for (int i = 0; i < ans_len; i++){
               ans[num][i] = Input[start+i];
           }
       }
