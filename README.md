@@ -47,13 +47,17 @@ To use SmartShoe-receiver, perform the following steps
 	
 	3. The vibration motor is configured to vibrate each alphabet to you with the following pattern(each on/off takes 0.3 second)
 	
-### Vibration Pattern:
+##### Vibration Pattern:
 
 		|Alphabets   |'A'         |'B'         |'C'         |'D'         |
 		|:----------:|:----------:|:----------:|:----------:|:----------:|
 		|Pattern     |on/off	  |on/off x2   |on/off x3   |on/off x4   |
 
-
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 # I want my own SmartShoe
 
 The following information will give you enough knowledge about how to build your own SmartShoe prototype.
