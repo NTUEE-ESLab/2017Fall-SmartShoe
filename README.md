@@ -53,9 +53,7 @@ To use SmartShoe-receiver, perform the following steps
 |:----------:|:----------:|:----------:|:----------:|:----------:|
 |Pattern     |on/off	  |on/off x2   |on/off x3   |on/off x4   |
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+
 
 # I want my own SmartShoe
 
