@@ -71,3 +71,41 @@ To configure the software environment to build SmartShoe-sender source code, you
 
 Finally, you need to build and configure CMSIS-DSP library on Energia, please refer to """"" for help.
 
+## Building SmartShoe-receiver
+
+Hardware requirements:
+	Raspberry Pi 3
+	RVN 1305 Vibrate Motor
+	
+Step 1. Put `read_ans.py` to appropriate path.
+Step 2. Set the start-up program on RPi 3
+	open `~/.config/lxsession/LXDE-pi/autostart` and choose the text editor.
+	scroll to the bottom and add a line
+	`@/usr/bin/python path_to_python_file`
+	You should replace `path_to_python_file` to your on path links to `read_ans.py`
+Step 3. Reboot RPi 3. (Execute the command `sudo reboot`)
+Step 4. You can see the program `read_ans.py` is running at the background.
+
+## Using Powerbank
+We cannot use the power from PC when we use it for application. Therefore, using Powerbank to replace the power from PC or 110V power. By our experiment, the circuit can work normally.
+
+# Experiment Result
+## SmartShoe-sender
+Photo1
+## SmartShoe-receiver
+Photo2
+## Demo Vedio
+Vedio link to Youtube
+
+# Future Goal
+1. Using more complicated transmission protocol to pass the alphabet A~Z
+2. Embedded the circuit and the power into shoes.
+3. Although the accuracy is high enough, we want to achieve 100% accuracy.
+
+
+# Reference
+[FSR-402 Datasheet](http://www.trossenrobotics.com/productdocs/2010-10-26-DataSheet-FSR402-Layout2.pdf)
+[Start-up Program on RPi 3](http://icodding.blogspot.tw/2016/01/raspberry-pi-linux-pi-sell-script.html)
+[Gatttool Usage](http://www.humbug.in/2014/using-gatttool-manualnon-interactive-mode-read-ble-devices/)
+[Energia-BLE](http://energia.nu/reference/ble/)
+[Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
