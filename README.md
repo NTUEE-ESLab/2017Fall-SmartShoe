@@ -77,21 +77,21 @@ Hardware requirements:
 	Raspberry Pi 3
 	RVN 1305 Vibrate Motor
 	
-Step 1. Put `read_ans.py` to appropriate path.
+[Step 1] Put `read_ans.py` to appropriate path.
 
-Step 2. Set the start-up program on RPi 3
+[Step 2] Set the start-up program on RPi 3
 
-	open `~/.config/lxsession/LXDE-pi/autostart` and choose the text editor.
+open `~/.config/lxsession/LXDE-pi/autostart` and choose the text editor.
 
-	scroll to the bottom and add a line
+scroll to the bottom and add a line
 
-	`@/usr/bin/python path_to_python_file`
+`@/usr/bin/python path_to_python_file`
 
-	You should replace `path_to_python_file` to your on path links to `read_ans.py`
+You should replace `path_to_python_file` to your on path links to `read_ans.py`
 
-Step 3. Reboot RPi 3. (Execute the command `sudo reboot`)
+[Step 3] Reboot RPi 3. (Execute the command `sudo reboot`)
 
-Step 4. You can see the program `read_ans.py` is running at the background.
+[Step 4] You can see the program `read_ans.py` is running at the background.
 
 ## Using Powerbank
 We cannot use the power from PC when we use it for application. Therefore, using Powerbank to replace the power from PC or 110V power. By our experiment, the circuit can work normally.
