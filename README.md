@@ -1,4 +1,5 @@
 # SmartShoe
+<<<<<<< HEAD
 
 Get good grades with SmartShoe!!!
 
@@ -131,3 +132,6 @@ We cannot use the power from PC when we use it for application. Therefore, using
 5. [Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
 
 6. [Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE)
+=======
+Get good grades with SmartShoe!!!
+>>>>>>> 3d66909b18c8cd0098cdcc6d9cee9273b7e7befd
