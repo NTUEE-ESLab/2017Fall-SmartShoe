@@ -69,7 +69,7 @@ Hardware requirements:
 
 To configure the software environment to build SmartShoe-sender source code, you need to first install Energia. After installation, have 'Energia MSP432 boards' installed(Tools -> Boards -> Boards Manager). Make sure to install 'Energia MSP432 boards' and don't install 'Energia MSP432 EMT RED boards'. Once the board is correctly installed, go to 'Sketch -> Include Library -> Library Manager' and install BLE.
 
-Finally, you need to build and configure CMSIS-DSP library on Energia, please refer to """"" for help.
+Finally, you need to build and configure CMSIS-DSP library on Energia, please refer to [Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE) for help.
 
 ## Building SmartShoe-receiver
 
@@ -105,7 +105,13 @@ Vedio link to Youtube
 
 # Reference
 [FSR-402 Datasheet](http://www.trossenrobotics.com/productdocs/2010-10-26-DataSheet-FSR402-Layout2.pdf)
+
 [Start-up Program on RPi 3](http://icodding.blogspot.tw/2016/01/raspberry-pi-linux-pi-sell-script.html)
+
 [Gatttool Usage](http://www.humbug.in/2014/using-gatttool-manualnon-interactive-mode-read-ble-devices/)
+
 [Energia-BLE](http://energia.nu/reference/ble/)
+
 [Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
+
+[Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE)
