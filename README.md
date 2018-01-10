@@ -91,11 +91,17 @@ We cannot use the power from PC when we use it for application. Therefore, using
 
 # Experiment Result
 ## SmartShoe-sender
-Photo1
+![alt text](https://github.com/NTUEE-ESLab/2017Fall-SmartShoe/blob/gh-pages/Images/Demo_MSP432.jpg?raw=true "SmartShoe-sender")
+
 ## SmartShoe-receiver
-Photo2
+![alt text](https://github.com/NTUEE-ESLab/2017Fall-SmartShoe/blob/gh-pages/Images/Demo_RPi.jpg?raw=true "SmartShoe-receiver")
+
 ## Demo Vedio
 Vedio link to Youtube
+1.[Demo-1 User Defined Pattern](https://youtu.be/x6R_morT4zs)
+2.[Demo-2 Test Transmission](https://youtu.be/oovrMNNiGNI)
+(Note: We use LED to show the result due to the fact that the vibration is small.)
+
 
 # Future Goal
 1. Using more complicated transmission protocol to pass the alphabet A~Z
@@ -104,14 +110,9 @@ Vedio link to Youtube
 
 
 # Reference
-[FSR-402 Datasheet](http://www.trossenrobotics.com/productdocs/2010-10-26-DataSheet-FSR402-Layout2.pdf)
-
-[Start-up Program on RPi 3](http://icodding.blogspot.tw/2016/01/raspberry-pi-linux-pi-sell-script.html)
-
-[Gatttool Usage](http://www.humbug.in/2014/using-gatttool-manualnon-interactive-mode-read-ble-devices/)
-
-[Energia-BLE](http://energia.nu/reference/ble/)
-
-[Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
-
-[Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE)
+1.[FSR-402 Datasheet](http://www.trossenrobotics.com/productdocs/2010-10-26-DataSheet-FSR402-Layout2.pdf)
+2.[Start-up Program on RPi 3](http://icodding.blogspot.tw/2016/01/raspberry-pi-linux-pi-sell-script.html)
+3.[Gatttool Usage](http://www.humbug.in/2014/using-gatttool-manualnon-interactive-mode-read-ble-devices/)
+4.[Energia-BLE](http://energia.nu/reference/ble/)
+5.[Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
+6.[Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE)
