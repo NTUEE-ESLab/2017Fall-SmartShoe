@@ -78,12 +78,19 @@ Hardware requirements:
 	RVN 1305 Vibrate Motor
 	
 Step 1. Put `read_ans.py` to appropriate path.
+
 Step 2. Set the start-up program on RPi 3
+
 	open `~/.config/lxsession/LXDE-pi/autostart` and choose the text editor.
+
 	scroll to the bottom and add a line
+
 	`@/usr/bin/python path_to_python_file`
+
 	You should replace `path_to_python_file` to your on path links to `read_ans.py`
+
 Step 3. Reboot RPi 3. (Execute the command `sudo reboot`)
+
 Step 4. You can see the program `read_ans.py` is running at the background.
 
 ## Using Powerbank
@@ -97,16 +104,18 @@ We cannot use the power from PC when we use it for application. Therefore, using
 ![alt text](https://github.com/NTUEE-ESLab/2017Fall-SmartShoe/blob/gh-pages/Images/Demo_RPi.jpg?raw=true "SmartShoe-receiver")
 
 ## Demo Vedio
-Vedio link to Youtube
 1. [Demo-1 User Defined Pattern](https://youtu.be/x6R_morT4zs)
 
 2. [Demo-2 Test Transmission](https://youtu.be/oovrMNNiGNI)
+
 (Note: We use LED to show the result due to the fact that the vibration is small.)
 
 
 # Future Goal
 1. Using more complicated transmission protocol to pass the alphabet A~Z
+
 2. Embedded the circuit and the power into shoes.
+
 3. Although the accuracy is high enough, we want to achieve 100% accuracy.
 
 
