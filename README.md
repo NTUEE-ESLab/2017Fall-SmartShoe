@@ -21,31 +21,31 @@ To use SmartShoe-sender, the sender must send data through pressing the force se
 
 To use SmartShoe-sender to costumize your input pattern and send data, please follow the steps below
 
-	1. Power on SmartShoe-sender. Once the shoe is powered, it automatically enters initialization mode. Any configuration you made will be lost when the shoe loses power.
+1. Power on SmartShoe-sender. Once the shoe is powered, it automatically enters initialization mode. Any configuration you made will be lost when the shoe loses power.
 	
-	2. In the initializtion mode, press push-button2. A green LED will light up, when this happens, press the force sensor with the pattern you wish to represent the alphabet 'A'. SmartShoe stores up to 3 seconds of pressing pattern, if your pressing pattern exceeds three seconds, the pattern of the middle three seconds would be selected as the specific pattern. It is advised that your pressing pattern is within three seconds.
+2. In the initializtion mode, press push-button2. A green LED will light up, when this happens, press the force sensor with the pattern you wish to represent the alphabet 'A'. SmartShoe stores up to 3 seconds of pressing pattern, if your pressing pattern exceeds three seconds, the pattern of the middle three seconds would be selected as the specific pattern. It is advised that your pressing pattern is within three seconds.
 	
-	3. Wait for the green LED to go off. SmartShoe-sender has now initialized what kind of pressing pattern represents 'A'. 
+3. Wait for the green LED to go off. SmartShoe-sender has now initialized what kind of pressing pattern represents 'A'. 
 	
-	4. Repeat step 2 and step 3 three more times to specify the patterns for 'B', 'C', and 'D'.
+4. Repeat step 2 and step 3 three more times to specify the patterns for 'B', 'C', and 'D'.
 	
-	5. Now all patterns have been specified, all the subsequent presses you made will be decoded using the data your have input in the initialization mode and sent to SmartShoe-receiver.
+5. Now all patterns have been specified, all the subsequent presses you made will be decoded using the data your have input in the initialization mode and sent to SmartShoe-receiver.
 
 SmartShoe-sender uses vector manipulation to determine what your input should be, to minimize error
 
-	1. Be sure your input pressing pattern matches the pattern in initialization mode, especially in frequency.
+1. Be sure your input pressing pattern matches the pattern in initialization mode, especially in frequency.
 	
-	2. Make sure to wait at least one second between each pressing pattern.(It is recommended to wain up to three seconds if time permits.)
+2. Make sure to wait at least one second between each pressing pattern.(It is recommended to wain up to three seconds if time permits.)
 
 ## SmartShoe-receiver
 
 To use SmartShoe-receiver, perform the following steps
 
-	1. Make sure a SmartShoe-sender is working nearby.
+1. Make sure a SmartShoe-sender is working nearby.
 	
-	2. Power on your SmartShoe-receiver.
+2. Power on your SmartShoe-receiver.
 	
-	3. The vibration motor is configured to vibrate each alphabet to you with the following pattern(each on/off takes 0.3 second)
+3. The vibration motor is configured to vibrate each alphabet to you with the following pattern(each on/off takes 0.3 second)
 	
 ##### Vibration Pattern:
 
@@ -98,9 +98,9 @@ We cannot use the power from PC when we use it for application. Therefore, using
 
 ## Demo Vedio
 Vedio link to Youtube
-1.[Demo-1 User Defined Pattern](https://youtu.be/x6R_morT4zs)
+1. [Demo-1 User Defined Pattern](https://youtu.be/x6R_morT4zs)
 
-2.[Demo-2 Test Transmission](https://youtu.be/oovrMNNiGNI)
+2. [Demo-2 Test Transmission](https://youtu.be/oovrMNNiGNI)
 (Note: We use LED to show the result due to the fact that the vibration is small.)
 
 
@@ -111,14 +111,14 @@ Vedio link to Youtube
 
 
 # Reference
-1.[FSR-402 Datasheet](http://www.trossenrobotics.com/productdocs/2010-10-26-DataSheet-FSR402-Layout2.pdf)
+1. [FSR-402 Datasheet](http://www.trossenrobotics.com/productdocs/2010-10-26-DataSheet-FSR402-Layout2.pdf)
 
-2.[Start-up Program on RPi 3](http://icodding.blogspot.tw/2016/01/raspberry-pi-linux-pi-sell-script.html)
+2. [Start-up Program on RPi 3](http://icodding.blogspot.tw/2016/01/raspberry-pi-linux-pi-sell-script.html)
 
-3.[Gatttool Usage](http://www.humbug.in/2014/using-gatttool-manualnon-interactive-mode-read-ble-devices/)
+3. [Gatttool Usage](http://www.humbug.in/2014/using-gatttool-manualnon-interactive-mode-read-ble-devices/)
 
-4.[Energia-BLE](http://energia.nu/reference/ble/)
+4. [Energia-BLE](http://energia.nu/reference/ble/)
 
-5.[Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
+5. [Energia-MSP432](http://energia.nu/pin-maps/guide_msp432p401r/)
 
-6.[Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE)
+6. [Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE)
