@@ -1,5 +1,4 @@
 # SmartShoe
-<<<<<<< HEAD
 
 Get good grades with SmartShoe!!!
 
