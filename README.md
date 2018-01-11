@@ -17,9 +17,9 @@ The prototype consists of two kinds of shoes: SmartShoe-sender and SmartShoe-rec
 
 ## SmartShoe-sender
 
-To use SmartShoe-sender, the sender must send data through pressing the force sensor. SmartShoe-sender provides four different alphabets to send by default(A,B,C,D). Each alphabet would correspond to a specific pattern of pressing the force sensor. Instead of having the user to learn data encoding protocols, SmartShoe lets the sender to customize how each input should be like. 
+To use SmartShoe-sender, the sender must send data by pressing the force sensor. SmartShoe-sender provides four types of letters to send by default(A,B,C,D). Each letter would correspond to a specific pattern of pressing the force sensor. Instead of having the user to learn data encoding protocols, SmartShoe provides great flexibility by leaving the user to customize the pressing patterns of each letter. 
 
-To use SmartShoe-sender to costumize your input pattern and send data, please follow the steps below
+To use SmartShoe-sender to costumize your input pressing pattern and send data, please follow the steps below
 
 1. Power on SmartShoe-sender. Once the shoe is powered, it automatically enters initialization mode. Any configuration you made will be lost when the shoe loses power.
 	
