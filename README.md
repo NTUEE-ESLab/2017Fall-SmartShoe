@@ -4,7 +4,7 @@ Get good grades with SmartShoe!!!
 
 # What is SmartShoe?
 
-SmartShoe is a project aimed at providing an easy way of communicating without being noticed. The idea is to implement a sender and various receivers that can be hidden in our clothing (i.e. shoes). The sender and receivers may transmit valuable information without suspicious action.
+SmartShoe is a project aimed at providing an easy way of communicating without being noticed. The idea is to implement a sender and various receivers that can be hidden in our clothing (i.e. shoes). The sender and receivers may transmit valuable information without suspicious action. In addition, the data could be sent to thingspeak.com for access from the internet.
 
 # How is it made?
 
