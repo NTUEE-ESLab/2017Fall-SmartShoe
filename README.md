@@ -15,13 +15,13 @@ The prototype consists of two kinds of shoes: SmartShoe-sender and SmartShoe-rec
 
 # Building CMSIS-DSP Library on Energia IDE for MSP432
 
-SmartShoe-sender utilizes CMSIS-DSP library for processing input signal. It is necessary to build the CMSIS-DSP library on Energia for the code to work. Here we provide a way to build CMSIS-DSP library on Energia IDE for MSP432.
+   SmartShoe-sender utilizes CMSIS-DSP library for processing input signal. It is necessary to build the CMSIS-DSP library on Energia for the code to work. Here we provide a way to build CMSIS-DSP library on Energia IDE for MSP432.
 
-Before you start, make sure you have correctly installed Energia and have "Energia MSP432 boards" installed (do not install "Energia MSP432 EMT RED boards").  
+   Before you start, make sure you have correctly installed Energia and have "Energia MSP432 boards" installed (do not install "Energia MSP432 EMT RED boards").  
 
-Go to [CMSIS github page](https://github.com/ARM-software/CMSIS_5/releases/tag/5.2.0) and download its source code. Unzip the file. You should have a directory with a name like "CMSIS_5-5.2.0". Go to the path "CMSIS_5-5.2.0/CMSIS/DSP/Include" where you can find four header files(arm_common_tables.h, arm_const_structs.h, arm_math.h, cmsis_ccs.h). Copy all these files.
+   Go to [CMSIS github page](https://github.com/ARM-software/CMSIS_5/releases/tag/5.2.0) and download its source code. Unzip the file. You should have a directory with a name like "CMSIS_5-5.2.0". Go to the path "CMSIS_5-5.2.0/CMSIS/DSP/Include" where you can find four header files(arm_common_tables.h, arm_const_structs.h, arm_math.h, cmsis_ccs.h). Copy all these files.
 
-Now find the directory where Energia stores all its packages (i.e .energia15). This directory should be at the same place where you installed Energia. In this directory, locate to "packages/energia/hardware/msp432/3.8.0/system/inc/CMSIS" and paste all files you have copied in the previous step.
+   Now find the directory where Energia stores all its packages (i.e .energia15). This directory should be at the same place where you installed Energia. In this directory, locate to "packages/energia/hardware/msp432/3.8.0/system/inc/CMSIS" and paste all files you have copied in the previous step.
 
 Open the file arm_math.h, at the start of the file, insert the following lines:
 
@@ -36,7 +36,7 @@ You should be able to use CMSIS-DSP library on Energia now. To use the library, 
 	
 	#include <arm_math.h>
 	
-at the start of your script. Alternatively, you can visit [Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE) where we made the process easier for you.
+at the start of your script. Alternatively, you can visit the github page [Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE) where we made the process easier for you.
 
 # Usages
 
