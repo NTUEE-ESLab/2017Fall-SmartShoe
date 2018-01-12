@@ -13,6 +13,31 @@ The prototype consists of two kinds of shoes: SmartShoe-sender and SmartShoe-rec
 ![alt text]( https://github.com/NTUEE-ESLab/2017Fall-SmartShoe/blob/gh-pages/Images/sender_bb.jpg?raw=true "SmartShoe-sender")
 ![alt text]( https://github.com/NTUEE-ESLab/2017Fall-SmartShoe/blob/gh-pages/Images/receiver_bb.jpg?raw=true  "SmartShoe-receiver")
 
+# Building CMSIS-DSP Library on Energia IDE for MSP432
+
+SmartShoe-sender utilizes CMSIS-DSP library for processing input signal. It is necessary to build the CMSIS-DSP library on Energia for the code to work. Here we provide a way to build CMSIS-DSP library on Energia IDE for MSP432.
+
+Before you start, make sure you have correctly installed Energia and have "Energia MSP432 boards" installed (do not install "Energia MSP432 EMT RED boards").  
+
+Go to [CMSIS github page](https://github.com/ARM-software/CMSIS_5/releases/tag/5.2.0) and download its source code. Unzip the file. You should have a directory with a name like "CMSIS_5-5.2.0". Go to the path "CMSIS_5-5.2.0/CMSIS/DSP/Include" where you can find four header files(arm_common_tables.h, arm_const_structs.h, arm_math.h, cmsis_ccs.h). Copy all these files.
+
+Now find the directory where Energia stores all its packages (i.e .energia15). This directory should be at the same place where you installed Energia. In this directory, locate to "packages/energia/hardware/msp432/3.8.0/system/inc/CMSIS" and paste all files you have copied in the previous step.
+
+Open the file arm_math.h, at the start of the file, insert the following lines:
+
+	#define ARM_MATH_CM4
+	#define __FPU_PRESENT 1
+	#define ARM_MATH_DSP
+
+
+Now go to "CMSIS_5-5.2.0/CMSIS/DSP/Source". Copy all folders and paste them at ".energia15/packages/energia/hardware/msp432/3.8.0/core/msp432/src.
+
+You should be able to use CMSIS-DSP library on Energia now. To use the library, in boards select MSP432 and add
+	
+	#include <arm_math.h>
+	
+at the start of your script. Alternatively, you can visit [Energia-CMSIS Library](https://github.com/b03901060/CMSIS-DSP-Library-for-MSP432-on-Energia-IDE) where we made the process easier for you.
+
 # Usages
 
 ## SmartShoe-sender
